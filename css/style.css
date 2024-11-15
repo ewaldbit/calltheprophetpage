@@ -9,7 +9,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	background-color: #eaf7f6;
-	padding: 10px;
+	padding: 1px;
 }
 .navbar-header {
 	display: flex;
@@ -23,20 +23,13 @@ body {
 .navbar-nav {
 	display: flex;
 	list-style: none;
-	padding-left: 0;
-}
-.navbar-nav li {
-	margin-right: 5px;
-}
-.navbar-nav li:last-child {
-	margin-right: 15px;
 }
 .navbar-nav .navbar-btn {
 	position: relative;
-	left: 190px;
+	left: 100%;
 }
 .navbar a {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	text-shadow:
     2px 2px 5px black,
@@ -47,21 +40,11 @@ body {
 
 section.banner {
 	position: relative;
-	min-height: 1024px;
+	min-height: 768px;
 	background-image: url('../images/bg.png');
 	width: 100%;
 	background-size: cover;
-	background-position: center;
-}
-
-section.banner p {
-	font-size: 25px; 
-	font-weight: 500;
-	text-shadow:
-    2px 2px 8px white,
-    0 0 2em white,
-    0 0 0.4em white;
-  color: #fff;
+	background-position: top;
 }
 
 .overlay {
@@ -74,9 +57,21 @@ section.banner p {
 
 }
 
+section.banner p {
+	font-size: 25px; 
+	font-weight: 500;
+	text-shadow:
+    2px 2px 8px white,
+    0 0 2em white,
+    0 0 0.4em white;
+  color: #fff;
+}
+
+
+
 .chamada-banner{
 	position: relative;
-	top: 603px;
+	top: 468px;
 	
 }
 
@@ -95,8 +90,8 @@ section.banner p {
 .chamada-banner a {
     display: inline-block;
     color: white;
-    font-size: 19px;
-    padding: 10px 18px;
+    font-size: 15px;
+    padding: 10px 15px;
     background: #023e8a;
     border-radius: 10px;
     position: relative;
@@ -124,52 +119,51 @@ section.banner p {
 
 section.cadastro-lead {
 	background: #9b5de5;
-	padding: 20px 0;
+	padding: 2px 0;
 } 
 
 section.cadastro-lead h2{
 	color: white;
-	font-size: 34px;
-	left: 210px;
-	position: relative;
+	font-size: 18px;
+	position: relative;	
 	top: -4px;
-	
+	left: 386px;
 }
 
 section.cadastro-lead input[type=text]{
 	width: 45%;
-	height: 40px;
+	height: 30px;
 	border: 2px solid #FFF;
 	position: relative;
-	top: 15px;
+	top: 12px;
 }
 
 section.cadastro-lead input[type=submit]{
 	background: #9d8cff;
 	width: 15%;
-	height: 40px;
+	height: 30px;
 	border: 2px solid #FFF;
 	position: relative;
-	top: 15px;
+	top: 11px;
 }
 
 section.depoimento {
-	padding: 40px;
+	padding: 20px;
 	background: #fff;
 }
 
 section.depoimento h2{
 	color: #03045e;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 section.depoimento h3 {
-	font-size: 35px;
+	font-size: 25px;
 }
 
 section.depoimento blockquote{
 	color: #4b4b4b;
-	font-size: 20px;
+	font-size: 16px;
 	font-style: italic;
 }
 
@@ -197,16 +191,16 @@ section.sobre img {
 section.sobre .quadro {
 	position: relative;
 	padding: 10px 20px;
-	background: rgba(157, 140, 255, 0.4);
+	background: rgba(157, 140, 255, 0.7);
 	border-radius: 30px;
 	margin-bottom: 30px;
 	margin-left: 90px;
 }
 
 section.sobre h2 {
-	padding: 40px 10px;
+	padding: 45px 10px;
 	margin-top: 0;
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold;
 	color: #03045e;
   
@@ -214,16 +208,16 @@ section.sobre h2 {
 
 section.sobre h3 {
   	color: #03045e;
-  	font-size: 35px;
+  	font-size: 30px;
 }
 
 section.sobre p {
 	
   	/*color: #eaf7f6;*/
-  	font-size: 21px;
-  	font-weight: 600;
+  	font-size: 16px;
+  	font-weight: 400;
   	text-shadow:
-    2px 2px 5px black,
+    2px 2px 1.8px black,
     0 0 1em blue,
     0 0 0.2em blue;
     color: #eaf7f6;
@@ -232,7 +226,7 @@ section.sobre p {
 
 /* Ajustes para toda a seção */
 section.services {
-  	padding: 70px 0;
+  	padding: 30px 10px;
   	background: rgba(6, 0, 46, 255);
   	color: #1c1e4c;
 }
@@ -240,15 +234,14 @@ section.services {
 /* Estilização do título principal */
 section.services h2 {
   color: white;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 /* Ajusta a largura da seção e adiciona margem lateral fixa */
 .services-container {
+		padding-top: 20px;
   	margin-left: 1%;
   	margin-right: 1%;
-  	padding-left: 0;
-  	padding-right: 0;
 }
 
 .services-container h3 {
@@ -257,13 +250,13 @@ section.services h2 {
 
 .services-container h2{
 	color: #1c1e4c;
-	font-size: 2em;
+	/*font-size: 2em;*/
   	margin-bottom: 30px;
 }
 
 .services-container h2 {
   color: #1c1e4c;
-  font-size: 2em;
+  /*font-size: 2em;*/
   margin-bottom: 30px;
 }
 
@@ -273,17 +266,19 @@ section.services .col-md-4 {
   background: linear-gradient(25deg, rgba(2, 0, 36, 1) -30%, rgba(160, 136, 245, 1) 38%, rgba(0, 212, 255, 1) 100%);
   border: 5px solid rgba(6, 0, 46, 255);
   border-radius: 50px;
-  font-size: 30px;
+  font-size: 18px;
+  font-weight: 500;
   color: #fff;
-  padding: 20px;
+  padding: 16px;
   text-align: center;
- /* margin: 0.1%; /* Espaço entre as colunas */
-  max-width: 100%; /* Garante que cada coluna ocupe até o máximo de seu espaço */
+  /*margin: 0.1%; /* Espaço entre as colunas */
+  max-width: 50%; /* Garante que cada coluna ocupe até o máximo de seu espaço */
+  min-height: 290px;
 }
 
 /* Estilo do subtítulo dentro das colunas */
 section.services .col-md-4 h2 {
-  	font-size: 45px;
+  	font-size: 30px;
   	color: #1c1e4c;
 }
 
@@ -295,16 +290,17 @@ section.equipe {
 }
 
 section.equipe .equipe-texto {
-	padding: 30px 0;
-	font-size: 23px;
+	padding: 10px 0;
+	font-size: 18px;
 }
 
 
 section.equipe h2{
-	font-size: 50px;
+	font-size: 40px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 20px 10px;
+	padding-top: 30px;
+	padding-bottom: 25px;
 }
 
 section.equipe h3,h4 {
@@ -312,7 +308,6 @@ section.equipe h3,h4 {
 }
 
 .equipe-container {
-	padding-top: 30px;
 	padding-bottom: 30px;
 
 }
@@ -354,7 +349,7 @@ section.formulario{
 	padding: 30px 0;
 	background: rgba(6,0,46,255);
 	color: #FFF;
-	font-size: 25px;
+	font-size: 16px;
 	font-weight: 100;
 }
 
@@ -374,7 +369,7 @@ footer {
 	background: #9d8cff;
 	padding: 10px 0;
 	color: #1c1e4c;
-	font-size: 18px;
+	font-size: 13px;
 }
 
 
