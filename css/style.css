@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-nav .navbar-btn {
-  margin: 5px 0;
+  margin: 5px 2px;
 }
 
 .navbar a {
@@ -39,10 +39,11 @@ body {
 
 section.banner {
 	position: relative;
-	min-height: 768px;
+  min-height: 768px;
 	background-image: url('../images/bg.png');
-	width: 100%;
-	background-size: cover;
+/*	width: 100%;*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	background-position: top;
 }
 
@@ -427,9 +428,7 @@ footer {
   }
 
   section.banner {
-		background-size:100%;
-		background-repeat: no-repeat;
-		min-height: 380px;
+		min-height: 250px;
 	}
 
 	.overlay {
@@ -469,12 +468,12 @@ footer {
 
 @media (max-width: 500px) {
 
-	section.banner {
+/*	section.banner {
 		min-height: 212px;
-	}
+	}*/
 
 	.chamada-banner {
-		top: 131px;
+		top: 140px;
 	}
 
 	section.banner p, section.banner a  {
