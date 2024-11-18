@@ -452,18 +452,33 @@ footer {
 
   section.sobre .row {
   	margin: 0 auto;
+  	padding-bottom: 10px;
   }
 
   section.sobre .quadro {
-  	margin-left: 10px;
-  	margin-right: 50px;
+  	margin: 0 auto;
   }
 
   section.sobre {
     background-size: 100%;
-    /*margin-top: -5%;
-    margin-bottom: -5%;*/
   }
+
+  section.sobre h2 {
+  	padding: 20px 0;
+  }
+
+  section.sobre h3 {
+  	font-size: 20px;
+  }
+
+  .sobre_pc {
+  	display: none;
+ 	}
+
+ 	section.sobre p, .sobre_mobile  {
+ 		text-align: center;
+ 		font-size: 12px;
+ 	}
 }
 
 @media (max-width: 500px) {
