@@ -488,6 +488,10 @@ footer {
 		display: none;
 	}
 
+	section.formulario {
+		font-size: 14px;
+	}
+
 }
 
 
