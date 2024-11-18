@@ -225,61 +225,53 @@ section.sobre p {
 
 /* Ajustes para toda a seção */
 section.services {
-  	padding: 30px 10px;
-  	background: rgba(6, 0, 46, 255);
-  	color: #1c1e4c;
+    padding: 30px 10px;
+    background: rgba(6, 0, 46, 255);
+    color: #1c1e4c;
 }
 
 /* Estilização do título principal */
 section.services h2 {
-  color: white;
-  font-size: 40px;
+    color: white;
+    font-size: 40px;
 }
 
 /* Ajusta a largura da seção e adiciona margem lateral fixa */
 .services-container {
-		padding-top: 20px;
-  	margin-left: 1%;
-  	margin-right: 1%;
+    padding-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .services-container h3 {
-	color: #fff;
-}
-
-.services-container h2{
-	color: #1c1e4c;
-	/*font-size: 2em;*/
-  	margin-bottom: 30px;
+    color: #fff;
 }
 
 .services-container h2 {
-  color: #1c1e4c;
-  /*font-size: 2em;*/
-  margin-bottom: 30px;
+    color: #1c1e4c;
+    margin-bottom: 30px;
 }
 
-
 /* Estilização das colunas */
-section.services .col-md-4 {
-  background: linear-gradient(25deg, rgba(2, 0, 36, 1) -30%, rgba(160, 136, 245, 1) 38%, rgba(0, 212, 255, 1) 100%);
-  border: 5px solid rgba(6, 0, 46, 255);
-  border-radius: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  padding: 16px;
-  text-align: center;
-  /*margin: 0.1%; /* Espaço entre as colunas */
-  max-width: 50%; /* Garante que cada coluna ocupe até o máximo de seu espaço */
-  min-height: 290px;
+section.services .col-md-4, section.services .col-sm-6, section.services .col-xs-12 {
+    background: linear-gradient(25deg, rgba(2, 0, 36, 1) -30%, rgba(160, 136, 245, 1) 38%, rgba(0, 212, 255, 1) 100%);
+    border: 5px solid rgba(6, 0, 46, 255);
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 20px; /* Espaço entre as colunas */
+    min-height: 290px;
 }
 
 /* Estilo do subtítulo dentro das colunas */
-section.services .col-md-4 h2 {
-  	font-size: 30px;
-  	color: #1c1e4c;
+section.services .col-md-4 h2, section.services .col-sm-6 h2, section.services .col-xs-12 h2 {
+    font-size: 30px;
+    color: #1c1e4c;
 }
+
 
 section.equipe {
 	background: #eaf7f6;
@@ -402,11 +394,6 @@ footer {
 		text-align: center;
 	}
 
-	/*section.banner {
-		min-height: 768px;
-		width: 100%;
-		background-size:cover;
-	}*/
 }	
 
 /* Custom media query for responsive behavior */
@@ -473,28 +460,37 @@ footer {
   	margin-right: 50px;
   }
 
-  section.sobre img {
-    background-size: auto;
-    margin-top: -5%;
-    margin-bottom: -5%;
+  section.sobre {
+    background-size: 100%;
+    /*margin-top: -5%;
+    margin-bottom: -5%;*/
   }
+}
 
+@media (max-width: 500px) {
 
-  
-  /*section.services {
-  	align-items: center;
-  }
+	section.banner {
+		min-height: 212px;
+	}
 
-  section.services .col-md-4 {
-  	font-size: 15px;
-  }
+	.chamada-banner {
+		top: 131px;
+	}
 
-  section.services .col-md-4 h2 {
-  	font-size: 17px;
-  }
- 
-  */
+	section.banner p, section.banner a  {
+		font-size: 12px;
+	}
+
+	section.cadastro-lead {
+		padding: 15px 0;
+	}
+
+	section.cadastro-lead .row{
+		display: none;
+	}
+
 }
 
 
+}
 	
